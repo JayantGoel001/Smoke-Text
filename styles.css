@@ -31,11 +31,13 @@ section .text span{
 section .text span.active{
     animation: smoke 2s linear forwards;
     transform-origin: bottom;
+    color: white!important;
 }
 @keyframes smoke {
     0%{
         opacity: 1;
         filter: blur(0);
+        color: white;
         transform: translateX(0) translateY(0) rotate(0deg) scale(1);
     }
     50%{
